@@ -2,6 +2,10 @@ let num = 259;
 let count =0 ;
 
 function countdigit(num){
+    if(num == 0) return 1
+    //this method convert negative number to positive number
+    num =Math.abs(num)
+
     while(num>0){
         num=Math.floor(num/10);
         count++
@@ -9,7 +13,7 @@ function countdigit(num){
     return count
 }
 
-console.log(countdigit(25946484321313))
+console.log(countdigit(-895))
 
 //input 1234 -> 4
 /*
